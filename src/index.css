@@ -100,8 +100,9 @@
     font-family: 'Space Grotesk', sans-serif;
   }
 
-  html {
+  html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 }
 

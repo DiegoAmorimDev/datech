@@ -25,7 +25,7 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col items-center gap-8 max-w-md mx-auto text-center"
+          className="flex flex-col items-start gap-8 max-w-md mx-auto"
         >
           {[
             { icon: Phone, label: "WhatsApp", value: "(91) 99362-1494" },

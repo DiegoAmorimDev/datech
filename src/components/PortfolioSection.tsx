@@ -3,34 +3,9 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "E-commerce Fashion",
-    category: "E-commerce",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-  },
-  {
-    title: "Sistema de Gestão",
-    category: "Sistema Web",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-  },
-  {
-    title: "Landing Page SaaS",
-    category: "Landing Page",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
-  },
-  {
-    title: "Portal Corporativo",
-    category: "Site Institucional",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop",
-  },
-  {
-    title: "App Dashboard",
-    category: "Sistema Web",
-    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop",
-  },
-  {
-    title: "Loja Virtual Gourmet",
-    category: "E-commerce",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+    title: "Priscila Amaral Advogada",
+    category: "Site Institucional — Advocacia",
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=400&fit=crop",
   },
 ];
 

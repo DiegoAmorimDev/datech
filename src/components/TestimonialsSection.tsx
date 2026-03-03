@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    className="text-center px-4 md:px-16 py-8"
+                    className="text-center px-4 md:px-16 py-2"
                   >
                     <Quote className="h-10 w-10 text-primary/30 mx-auto mb-6" />
                     <p className="text-lg md:text-xl text-foreground leading-relaxed mb-8 italic">"{t.text}"</p>

@@ -40,7 +40,7 @@ const AboutSection = () => {
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">Sobre a DATECH</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               A DATECH nasceu da paixão por tecnologia e inovação. Liderada por
-              <strong className="text-foreground"> Diego Amorim</strong>, desenvolvedor e arquiteto principal, nossa
+              <strong className="text-foreground"> Diego Amorim</strong>, desenvolvedor e arquiteto de software, nossa
               missão é criar soluções digitais que transformam negócios e conectam pessoas.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">

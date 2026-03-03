@@ -7,6 +7,7 @@ const projects = [
     title: "Priscila Amaral Advogada",
     category: "Site Institucional — Advocacia",
     image: portfolioAdvocacia,
+    link: "https://priscilaadvprevidenciario.com.br/",
   },
 ];
 
@@ -38,6 +39,7 @@ const PortfolioSection = () => {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
               className="group relative rounded-2xl overflow-hidden cursor-pointer"
+              onClick={() => window.open(project.link, "_blank")}
             >
               <div className="aspect-[3/2] overflow-hidden">
                 <img

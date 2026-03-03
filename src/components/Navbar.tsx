@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logoDatech from "@/assets/logo_datech.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -36,9 +37,12 @@ const Navbar = () => {
         <a
           href="#hero"
           onClick={(e) => { e.preventDefault(); handleClick("#hero"); }}
-          className="font-display text-2xl font-bold tracking-tight text-primary"
+          className="flex items-center gap-2"
         >
-          DA<span className="text-foreground">TECH</span>
+          <img src={logoDatech} alt="DATECH Logo" className="h-9 w-auto" />
+          <span className="font-display text-2xl font-bold tracking-tight">
+            <span className="text-primary">DA</span><span className="text-foreground">TECH</span>
+          </span>
         </a>
 
         {/* Desktop */}

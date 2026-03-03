@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Code2, Lightbulb, Target } from "lucide-react";
+import diegoPhoto from "@/assets/diego-amorim.jpeg";
 
 const AboutSection = () => {
   return (
@@ -18,8 +19,8 @@ const AboutSection = () => {
               <div className="w-full h-full rounded-3xl bg-card flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
                 <div className="text-center z-10 p-8">
-                  <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                    <span className="font-display text-4xl font-bold text-accent-foreground">DA</span>
+                  <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-accent overflow-hidden">
+                    <img src={diegoPhoto} alt="Diego Amorim" className="w-full h-full object-cover" />
                   </div>
                   <h3 className="font-display text-2xl font-bold text-foreground">Diego Amorim</h3>
                   <p className="text-primary font-medium mt-1">Fundador & Arquiteto Principal</p>

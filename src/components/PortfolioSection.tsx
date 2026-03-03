@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import portfolioAdvocacia from "@/assets/portfolio-advocacia.png";
 
 const projects = [
   {
     title: "Priscila Amaral Advogada",
     category: "Site Institucional — Advocacia",
-    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=400&fit=crop",
+    image: portfolioAdvocacia,
   },
 ];
 

@@ -23,7 +23,7 @@ const AboutSection = () => {
                     <img src={diegoPhoto} alt="Diego Amorim" className="w-full h-full object-cover" />
                   </div>
                   <h3 className="font-display text-2xl font-bold text-foreground">Diego Amorim</h3>
-                  <p className="text-primary font-medium mt-1">Fundador & Arquiteto Principal</p>
+                  <p className="text-primary font-medium mt-1">Fundador & Arquiteto de Software</p>
                 </div>
               </div>
             </div>
@@ -36,20 +36,16 @@ const AboutSection = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
           >
-            <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">
-              Quem somos
-            </p>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Sobre a DATECH
-            </h2>
+            <p className="text-sm uppercase tracking-[0.3em] text-primary mb-3">Quem somos</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">Sobre a DATECH</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               A DATECH nasceu da paixão por tecnologia e inovação. Liderada por
-              <strong className="text-foreground"> Diego Amorim</strong>, desenvolvedor e arquiteto principal,
-              nossa missão é criar soluções digitais que transformam negócios e conectam pessoas.
+              <strong className="text-foreground"> Diego Amorim</strong>, desenvolvedor e arquiteto principal, nossa
+              missão é criar soluções digitais que transformam negócios e conectam pessoas.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Com experiência em diversas tecnologias e metodologias modernas, entregamos projetos
-              que combinam design sofisticado, performance excepcional e código de qualidade.
+              Com experiência em diversas tecnologias e metodologias modernas, entregamos projetos que combinam design
+              sofisticado, performance excepcional e código de qualidade.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">

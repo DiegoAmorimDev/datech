@@ -45,7 +45,7 @@ const ContactSection = () => {
           </div>
 
           <a
-            href="https://wa.me/5591993621494?text=ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20um%20site"
+            href="https://wa.me/5591993621494?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20DATECH%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 mt-4 px-8 py-4 rounded-xl bg-[hsl(142,70%,45%)] text-[hsl(0,0%,100%)] font-semibold text-lg hover:opacity-90 transition-opacity shadow-lg"

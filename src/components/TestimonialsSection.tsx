@@ -20,7 +20,7 @@ const testimonials = [
   },
   {
     name: "Carlos Eduardo",
-    role: "Gerente, FastLogística",
+    role: "Gerente",
     text: "Diego entendeu exatamente o que precisávamos. O portal ficou moderno, rápido e nossos clientes adoraram a nova experiência.",
   },
 ];

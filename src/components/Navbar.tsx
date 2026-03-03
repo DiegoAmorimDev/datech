@@ -23,11 +23,23 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleClick = (href: string) => {
+  const handleClick = (e: React.MouseEvent, href: string) => {
+    e.preventDefault();
     setMobileOpen(false);
-    setTimeout(() => {
-      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
-    }, 300);
+
+    const targetElement = document.querySelector(href);
+    if (targetElement) {
+      const navHeight = 80;
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+
+      setTimeout(() => {
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }, 100);
+    }
   };
 
   return (
@@ -39,7 +51,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         <a
           href="#hero"
-          onClick={(e) => { e.preventDefault(); handleClick("#hero"); }}
+          onClick={(e) => handleClick(e, "#hero")}
           className="flex items-center gap-2"
         >
           <img src={logoDatech} alt="DATECH Logo" className="h-9 w-auto" />
@@ -55,7 +67,7 @@ const Navbar = () => {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  onClick={(e) => { e.preventDefault(); handleClick(link.href); }}
+                  onClick={(e) => handleClick(e, link.href)}
                   className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full"
                 >
                   {link.label}
@@ -90,7 +102,7 @@ const Navbar = () => {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    onClick={(e) => { e.preventDefault(); handleClick(link.href); }}
+                    onClick={(e) => handleClick(e, link.href)}
                     className="text-base font-medium text-muted-foreground hover:text-primary transition-colors"
                   >
                     {link.label}

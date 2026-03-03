@@ -25,22 +25,24 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col items-start gap-8 max-w-md mx-auto"
+          className="flex flex-col items-center gap-8 max-w-md mx-auto"
         >
-          {[
-            { icon: Phone, label: "WhatsApp", value: "(91) 99362-1494" },
-            { icon: MapPin, label: "Localização", value: "Brasil" },
-          ].map((item) => (
-            <div key={item.label} className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center shrink-0">
-                <item.icon className="h-5 w-5 text-primary" />
+          <div className="flex flex-col items-start gap-8">
+            {[
+              { icon: Phone, label: "WhatsApp", value: "(91) 99362-1494" },
+              { icon: MapPin, label: "Localização", value: "Brasil" },
+            ].map((item) => (
+              <div key={item.label} className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center shrink-0">
+                  <item.icon className="h-5 w-5 text-primary" />
+                </div>
+                <div className="text-left">
+                  <p className="text-sm text-muted-foreground">{item.label}</p>
+                  <p className="font-medium text-foreground">{item.value}</p>
+                </div>
               </div>
-              <div className="text-left">
-                <p className="text-sm text-muted-foreground">{item.label}</p>
-                <p className="font-medium text-foreground">{item.value}</p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
 
           <a
             href="https://wa.me/5591993621494?text=ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20um%20site"

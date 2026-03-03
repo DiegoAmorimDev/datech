@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Ana Carolina Silva",
     role: "CEO",
-    text: "A DATECH transformou completamente nossa presença online. O e-commerce ficou incrível.",
+    text: "A DATECH transformou completamente nossa presença online.",
   },
   {
     name: "Roberto Mendes",

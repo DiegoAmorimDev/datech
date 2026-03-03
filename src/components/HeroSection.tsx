@@ -34,9 +34,36 @@ const HeroSection = () => {
             Desenvolvimento Web & Sistemas
           </motion.p>
 
-          <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-6">
-            <span className="text-primary">DA</span>
-            <span className="text-foreground">TECH</span>
+          <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-6 flex items-center justify-center overflow-hidden">
+            {["D", "A", "T", "E", "C", "H"].map((letter, i) => (
+              <motion.span
+                key={letter + i}
+                initial={{
+                  opacity: 0,
+                  y: i % 2 === 0 ? -80 : 80,
+                  x: (i - 2.5) * 40,
+                  rotate: (i - 2.5) * 15,
+                  scale: 0.3,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  x: 0,
+                  rotate: 0,
+                  scale: 1,
+                }}
+                transition={{
+                  delay: 0.3 + i * 0.12,
+                  duration: 0.7,
+                  type: "spring",
+                  stiffness: 120,
+                  damping: 12,
+                }}
+                className={i < 2 ? "text-primary inline-block" : "text-foreground inline-block"}
+              >
+                {letter}
+              </motion.span>
+            ))}
           </h1>
 
           <motion.p

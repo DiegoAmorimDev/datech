@@ -4,9 +4,9 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 
 const testimonials = [
   {
-    name: "Ana Carolina Silva",
-    role: "CEO",
-    text: "A DATECH transformou completamente nossa presença online.",
+    name: "Josué Amaral",
+    role: "Publicitário",
+    text: "Excelente site. Desing moderno, fácil de navegar e com informações muito bem estruturadas. Transmite total confiança e agilidade no atendimento.",
   },
   {
     name: "Roberto Mendes",

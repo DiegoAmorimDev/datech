@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import NotebookAnimation from "@/components/NotebookAnimation";
 
 const HeroSection = () => {
   const handleCTA = () => {
@@ -101,9 +100,6 @@ const HeroSection = () => {
             </Button>
           </motion.div>
         </motion.div>
-
-        {/* Notebook opening animation */}
-        <NotebookAnimation />
 
         {/* Scroll indicator */}
         <motion.div

@@ -6,17 +6,18 @@ import PortfolioSection from "@/components/PortfolioSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
-      <ServicesSection />
-      <AboutSection />
-      <PortfolioSection />
-      <TestimonialsSection />
-      <ContactSection />
+      <AnimatedSection><ServicesSection /></AnimatedSection>
+      <AnimatedSection><AboutSection /></AnimatedSection>
+      <AnimatedSection><PortfolioSection /></AnimatedSection>
+      <AnimatedSection><TestimonialsSection /></AnimatedSection>
+      <AnimatedSection><ContactSection /></AnimatedSection>
       <Footer />
     </div>
   );

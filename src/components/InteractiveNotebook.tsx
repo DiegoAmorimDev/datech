@@ -59,7 +59,7 @@ const InteractiveNotebook = () => {
       transition={{ duration: 1, delay: 2 }}
     >
       {/* Notebook frame */}
-      <div className="relative w-[340px] rounded-xl border border-border/40 bg-card/30 backdrop-blur-sm shadow-2xl overflow-hidden">
+      <div className="relative w-[340px] rounded-xl border border-border/40 bg-[hsl(215,35%,12%)] backdrop-blur-sm shadow-2xl overflow-hidden">
         {/* Top bar */}
         <div className="flex items-center gap-1.5 px-3 py-2 border-b border-border/30">
           <div className="w-2.5 h-2.5 rounded-full bg-destructive/60" />

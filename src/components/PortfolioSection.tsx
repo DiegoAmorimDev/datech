@@ -30,7 +30,7 @@ const PortfolioSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex justify-center gap-6">
           {projects.map((project, i) => (
             <motion.div
               key={project.title}
@@ -38,7 +38,7 @@ const PortfolioSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="group relative rounded-2xl overflow-hidden cursor-pointer"
+              className="group relative rounded-2xl overflow-hidden cursor-pointer w-full max-w-md"
               onClick={() => window.open(project.link, "_blank")}
             >
               <div className="aspect-[3/2] overflow-hidden">

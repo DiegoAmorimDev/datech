@@ -54,8 +54,8 @@ const InteractiveNotebook = () => {
         top: "15%",
       }}
       initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 0.25, scale: 1 }}
-      whileHover={{ opacity: 0.5, scale: 1.02 }}
+      animate={{ opacity: 0.4, scale: 1 }}
+      whileHover={{ opacity: 0.65, scale: 1.02 }}
       transition={{ duration: 1, delay: 2 }}
     >
       {/* Notebook frame */}

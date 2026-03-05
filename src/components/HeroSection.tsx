@@ -101,6 +101,7 @@ const HeroSection = () => {
                 whileHover={{
                   scale: 1.2,
                   y: -10,
+                  color: "hsl(199, 89%, 60%)",
                   transition: { type: "spring", stiffness: 300, damping: 10 },
                 }}
                 transition={{

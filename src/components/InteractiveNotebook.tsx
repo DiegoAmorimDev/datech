@@ -66,7 +66,7 @@ const InteractiveNotebook = () => {
           <div className="w-2.5 h-2.5 rounded-full bg-destructive/60" />
           <div className="w-2.5 h-2.5 rounded-full bg-[hsl(35,90%,60%)]/60" />
           <div className="w-2.5 h-2.5 rounded-full bg-[hsl(140,60%,55%)]/60" />
-          <span className="ml-2 text-[10px] text-muted-foreground/50 font-mono">app.tsx</span>
+          <span className="ml-2 text-[10px] text-muted-foreground/50 font-mono">Startup.cs</span>
         </div>
 
         {/* Code area */}

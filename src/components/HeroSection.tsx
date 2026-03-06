@@ -2,6 +2,8 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import InteractiveNotebook from "./InteractiveNotebook";
+import InteractiveTerminal from "./InteractiveTerminal";
 
 const HeroSection = () => {
   const handleCTA = () => {
@@ -41,7 +43,9 @@ const HeroSection = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl animate-pulse-glow" />
       </div>
 
-      {/* Floating particles */}
+      {/* Interactive notebook background element */}
+      <InteractiveNotebook />
+      <InteractiveTerminal />
       {[...Array(6)].map((_, i) => (
         <motion.div
           key={`particle-${i}`}

@@ -49,11 +49,11 @@ const PortfolioSection = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                 <span className="text-xs uppercase tracking-widest text-primary font-medium mb-1">
                   {project.category}
                 </span>
-                <h3 className="font-display text-xl font-bold text-background">
+                <h3 className="font-display text-xl font-bold text-white">
                   {project.title}
                 </h3>
                 <ExternalLink className="absolute top-4 right-4 h-5 w-5 text-background/80" />

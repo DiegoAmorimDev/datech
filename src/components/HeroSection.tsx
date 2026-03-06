@@ -45,6 +45,7 @@ const HeroSection = () => {
 
       {/* Interactive notebook background element */}
       <InteractiveNotebook />
+      <InteractiveTerminal />
       {[...Array(6)].map((_, i) => (
         <motion.div
           key={`particle-${i}`}

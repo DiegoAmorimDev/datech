@@ -2,22 +2,23 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 import { useState, useRef, useCallback } from "react";
 
 const codeLines = [
-  { text: "import { createApp } from", color: "hsl(199, 89%, 60%)", indent: 0 },
-  { text: "const app = new App({", color: "hsl(280, 70%, 65%)", indent: 0 },
-  { text: "  theme: 'modern',", color: "hsl(140, 60%, 55%)", indent: 1 },
-  { text: "  responsive: true,", color: "hsl(140, 60%, 55%)", indent: 1 },
-  { text: "  animations: true,", color: "hsl(35, 90%, 60%)", indent: 1 },
-  { text: "})", color: "hsl(280, 70%, 65%)", indent: 0 },
+  { text: "using Microsoft.AspNetCore;", color: "hsl(199, 89%, 60%)", indent: 0 },
   { text: "", color: "transparent", indent: 0 },
-  { text: "function render() {", color: "hsl(199, 89%, 60%)", indent: 0 },
-  { text: "  return <Layout>", color: "hsl(350, 70%, 60%)", indent: 1 },
-  { text: "    <Hero />", color: "hsl(35, 90%, 60%)", indent: 2 },
-  { text: "    <Services />", color: "hsl(35, 90%, 60%)", indent: 2 },
-  { text: "    <Portfolio />", color: "hsl(35, 90%, 60%)", indent: 2 },
-  { text: "  </Layout>", color: "hsl(350, 70%, 60%)", indent: 1 },
-  { text: "}", color: "hsl(199, 89%, 60%)", indent: 0 },
+  { text: "namespace DaTech.Web;", color: "hsl(280, 70%, 65%)", indent: 0 },
   { text: "", color: "transparent", indent: 0 },
-  { text: "app.deploy('production')", color: "hsl(140, 60%, 55%)", indent: 0 },
+  { text: "public class Startup", color: "hsl(140, 60%, 55%)", indent: 0 },
+  { text: "{", color: "hsl(280, 70%, 65%)", indent: 0 },
+  { text: "public void Configure()", color: "hsl(199, 89%, 60%)", indent: 1 },
+  { text: "{", color: "hsl(280, 70%, 65%)", indent: 1 },
+  { text: "app.UseRouting();", color: "hsl(35, 90%, 60%)", indent: 2 },
+  { text: "app.UseAuthorization();", color: "hsl(35, 90%, 60%)", indent: 2 },
+  { text: "app.MapControllers();", color: "hsl(350, 70%, 60%)", indent: 2 },
+  { text: "}", color: "hsl(280, 70%, 65%)", indent: 1 },
+  { text: "", color: "transparent", indent: 0 },
+  { text: "public void Run()", color: "hsl(199, 89%, 60%)", indent: 1 },
+  { text: "=> Host.CreateDefault()", color: "hsl(140, 60%, 55%)", indent: 2 },
+  { text: "  .Build().Run();", color: "hsl(140, 60%, 55%)", indent: 2 },
+  { text: "}", color: "hsl(280, 70%, 65%)", indent: 0 },
 ];
 
 const InteractiveNotebook = () => {
@@ -65,7 +66,7 @@ const InteractiveNotebook = () => {
           <div className="w-2.5 h-2.5 rounded-full bg-destructive/60" />
           <div className="w-2.5 h-2.5 rounded-full bg-[hsl(35,90%,60%)]/60" />
           <div className="w-2.5 h-2.5 rounded-full bg-[hsl(140,60%,55%)]/60" />
-          <span className="ml-2 text-[10px] text-muted-foreground/50 font-mono">app.tsx</span>
+          <span className="ml-2 text-[10px] text-muted-foreground/50 font-mono">Startup.cs</span>
         </div>
 
         {/* Code area */}

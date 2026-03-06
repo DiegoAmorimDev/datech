@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import InteractiveNotebook from "./InteractiveNotebook";
+import InteractiveTerminal from "./InteractiveTerminal";
 
 const HeroSection = () => {
   const handleCTA = () => {

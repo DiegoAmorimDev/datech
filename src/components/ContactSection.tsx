@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Mail } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -26,6 +26,7 @@ const ContactSection = () => {
           <div className="flex flex-col items-start gap-8">
             {[
               { icon: Phone, label: "WhatsApp", value: "(91) 99362-1494" },
+              { icon: Mail, label: "E-mail", value: "contato@datech-solutions.com.br" },
               { icon: MapPin, label: "Localização", value: "Pará, Brasil" },
             ].map((item) => (
               <div key={item.label} className="flex items-center gap-4">

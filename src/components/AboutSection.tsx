@@ -2,14 +2,16 @@ import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import { Code2, Lightbulb, Target } from "lucide-react";
 import diegoPhoto from "@/assets/diego-amorim.jpeg";
 import { useRef, useState, useEffect } from "react";
+import TechIcons from "./TechIcons";
 
 const techOrbitItems = [
-  { label: "React", angle: 0 },
-  { label: ".NET", angle: 60 },
-  { label: "TypeScript", angle: 120 },
-  { label: "SQL", angle: 180 },
-  { label: "Docker", angle: 240 },
-  { label: "Azure", angle: 300 },
+  { icon: TechIcons.React, angle: 0 },
+  { icon: TechIcons.DotNet, angle: 51.4 },
+  { icon: TechIcons.TypeScript, angle: 102.8 },
+  { icon: TechIcons.SQL, angle: 154.3 },
+  { icon: TechIcons.Docker, angle: 205.7 },
+  { icon: TechIcons.Azure, angle: 257.1 },
+  { icon: TechIcons.WordPress, angle: 308.6 },
 ];
 
 const AboutSection = () => {

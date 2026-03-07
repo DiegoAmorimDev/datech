@@ -5,8 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // ADICIONE ESTA LINHA ABAIXO:
-  base: mode === "production" ? "/datech/" : "/",
+  base: "/",
 
   server: {
     host: "::",

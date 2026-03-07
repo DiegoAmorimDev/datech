@@ -98,9 +98,10 @@ const AboutSection = () => {
                   const radius = 50;
                   const x = 50 + radius * Math.cos(rad);
                   const y = 50 + radius * Math.sin(rad);
+                  const IconComp = item.icon;
                   return (
                     <motion.div
-                      key={item.label}
+                      key={i}
                       className="absolute"
                       style={{ left: `${x}%`, top: `${y}%`, transform: "translate(-50%, -50%)" }}
                       initial={{ opacity: 0, scale: 0 }}
@@ -111,9 +112,9 @@ const AboutSection = () => {
                       <motion.div
                         animate={{ rotate: -360 }}
                         transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                        className="bg-card border border-primary/30 text-primary text-xs font-medium px-3 py-1.5 rounded-full shadow-lg shadow-primary/10 backdrop-blur-sm whitespace-nowrap"
+                        className="w-10 h-10 flex items-center justify-center bg-card border border-primary/30 text-primary rounded-full shadow-lg shadow-primary/10 backdrop-blur-sm"
                       >
-                        {item.label}
+                        <IconComp className="w-5 h-5" />
                       </motion.div>
                     </motion.div>
                   );

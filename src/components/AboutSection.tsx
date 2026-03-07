@@ -2,14 +2,16 @@ import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import { Code2, Lightbulb, Target } from "lucide-react";
 import diegoPhoto from "@/assets/diego-amorim.jpeg";
 import { useRef, useState, useEffect } from "react";
+import TechIcons from "./TechIcons";
 
 const techOrbitItems = [
-  { label: "React", angle: 0 },
-  { label: ".NET", angle: 60 },
-  { label: "TypeScript", angle: 120 },
-  { label: "SQL", angle: 180 },
-  { label: "Docker", angle: 240 },
-  { label: "Azure", angle: 300 },
+  { icon: TechIcons.React, angle: 0 },
+  { icon: TechIcons.DotNet, angle: 51.4 },
+  { icon: TechIcons.TypeScript, angle: 102.8 },
+  { icon: TechIcons.SQL, angle: 154.3 },
+  { icon: TechIcons.Docker, angle: 205.7 },
+  { icon: TechIcons.Azure, angle: 257.1 },
+  { icon: TechIcons.WordPress, angle: 308.6 },
 ];
 
 const AboutSection = () => {
@@ -96,9 +98,10 @@ const AboutSection = () => {
                   const radius = 50;
                   const x = 50 + radius * Math.cos(rad);
                   const y = 50 + radius * Math.sin(rad);
+                  const IconComp = item.icon;
                   return (
                     <motion.div
-                      key={item.label}
+                      key={i}
                       className="absolute"
                       style={{ left: `${x}%`, top: `${y}%`, transform: "translate(-50%, -50%)" }}
                       initial={{ opacity: 0, scale: 0 }}
@@ -109,9 +112,9 @@ const AboutSection = () => {
                       <motion.div
                         animate={{ rotate: -360 }}
                         transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                        className="bg-card border border-primary/30 text-primary text-xs font-medium px-3 py-1.5 rounded-full shadow-lg shadow-primary/10 backdrop-blur-sm whitespace-nowrap"
+                        className="w-10 h-10 flex items-center justify-center bg-card border border-primary/30 text-primary rounded-full shadow-lg shadow-primary/10 backdrop-blur-sm"
                       >
-                        {item.label}
+                        <IconComp className="w-5 h-5" />
                       </motion.div>
                     </motion.div>
                   );
